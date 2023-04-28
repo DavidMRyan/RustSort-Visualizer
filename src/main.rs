@@ -41,7 +41,7 @@ fn selection_sort(arr: &mut [i32]) {
         let mut min_idx = i;
         for j in (i + 1)..arr.len() {
             if arr[j] < arr[min_idx] {
-                print!("NEW MIN. VAL -> {:?}[Index: {:?}]\t", arr[j], j);
+                print!("NEW MIN. VAL -> {:?}[Index: {:?}] | ", arr[j], j);
                 min_idx = j;
             }
         }
