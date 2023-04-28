@@ -41,10 +41,12 @@ fn selection_sort(arr: &mut [i32]) {
         let mut min_idx = i;
         for j in (i + 1)..arr.len() {
             if arr[j] < arr[min_idx] {
-                print!("{:?} < {:?} -> Swapping!\t", arr[j], arr[min_idx]);
+                print!("NEW MIN. VAL -> {:?}[Index: {:?}]\t", arr[j], j);
                 min_idx = j;
             }
         }
+
+        print!("{:?} < {:?} -> Swapping!\t", arr[min_idx], arr[i]);
         arr.swap(min_idx, i);
         print!("]\n");
     }
